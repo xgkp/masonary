@@ -8,24 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		15CFBAE320E617C4008EC933 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 15CFBAE220E617C4008EC933 /* AppDelegate.m */; };
-		15CFBAE620E617C4008EC933 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15CFBAE520E617C4008EC933 /* ViewController.m */; };
 		15CFBAE920E617C5008EC933 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15CFBAE720E617C5008EC933 /* Main.storyboard */; };
 		15CFBAEB20E617C6008EC933 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 15CFBAEA20E617C6008EC933 /* Assets.xcassets */; };
 		15CFBAEE20E617C6008EC933 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15CFBAEC20E617C6008EC933 /* LaunchScreen.storyboard */; };
 		15CFBAF120E617C6008EC933 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 15CFBAF020E617C6008EC933 /* main.m */; };
+		15CFBAFA20E618FB008EC933 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 15CFBAF820E618FB008EC933 /* MainViewController.m */; };
+		15CFBAFB20E618FB008EC933 /* MainViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15CFBAF920E618FB008EC933 /* MainViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		15CFBADE20E617C4008EC933 /* masonry.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = masonry.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		15CFBAE120E617C4008EC933 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		15CFBAE220E617C4008EC933 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		15CFBAE420E617C4008EC933 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		15CFBAE520E617C4008EC933 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		15CFBAE820E617C5008EC933 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		15CFBAEA20E617C6008EC933 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		15CFBAED20E617C6008EC933 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		15CFBAEF20E617C6008EC933 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		15CFBAF020E617C6008EC933 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		15CFBAF720E618FB008EC933 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		15CFBAF820E618FB008EC933 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		15CFBAF920E618FB008EC933 /* MainViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainViewController.xib; sourceTree = "<group>"; };
+		15CFBAFE20E619DA008EC933 /* Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prefix.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,17 +61,35 @@
 		15CFBAE020E617C4008EC933 /* masonry */ = {
 			isa = PBXGroup;
 			children = (
+				15CFBAEF20E617C6008EC933 /* Info.plist */,
+				15CFBAFD20E61957008EC933 /* Controller */,
+				15CFBAFC20E6191A008EC933 /* SupportingFile */,
+			);
+			path = masonry;
+			sourceTree = "<group>";
+		};
+		15CFBAFC20E6191A008EC933 /* SupportingFile */ = {
+			isa = PBXGroup;
+			children = (
 				15CFBAE120E617C4008EC933 /* AppDelegate.h */,
 				15CFBAE220E617C4008EC933 /* AppDelegate.m */,
-				15CFBAE420E617C4008EC933 /* ViewController.h */,
-				15CFBAE520E617C4008EC933 /* ViewController.m */,
 				15CFBAE720E617C5008EC933 /* Main.storyboard */,
 				15CFBAEA20E617C6008EC933 /* Assets.xcassets */,
 				15CFBAEC20E617C6008EC933 /* LaunchScreen.storyboard */,
-				15CFBAEF20E617C6008EC933 /* Info.plist */,
+				15CFBAFE20E619DA008EC933 /* Prefix.pch */,
 				15CFBAF020E617C6008EC933 /* main.m */,
 			);
-			path = masonry;
+			path = SupportingFile;
+			sourceTree = "<group>";
+		};
+		15CFBAFD20E61957008EC933 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				15CFBAF720E618FB008EC933 /* MainViewController.h */,
+				15CFBAF820E618FB008EC933 /* MainViewController.m */,
+				15CFBAF920E618FB008EC933 /* MainViewController.xib */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -131,6 +152,7 @@
 				15CFBAEE20E617C6008EC933 /* LaunchScreen.storyboard in Resources */,
 				15CFBAEB20E617C6008EC933 /* Assets.xcassets in Resources */,
 				15CFBAE920E617C5008EC933 /* Main.storyboard in Resources */,
+				15CFBAFB20E618FB008EC933 /* MainViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,8 +163,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				15CFBAE620E617C4008EC933 /* ViewController.m in Sources */,
 				15CFBAF120E617C6008EC933 /* main.m in Sources */,
+				15CFBAFA20E618FB008EC933 /* MainViewController.m in Sources */,
 				15CFBAE320E617C4008EC933 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -285,6 +307,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DQAV5S53MC;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/macbookpro/Desktop/masonary/masonry/masonry/SupportingFile/Prefix.pch;
 				INFOPLIST_FILE = masonry/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -302,6 +326,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DQAV5S53MC;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/macbookpro/Desktop/masonary/masonry/masonry/SupportingFile/Prefix.pch;
 				INFOPLIST_FILE = masonry/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

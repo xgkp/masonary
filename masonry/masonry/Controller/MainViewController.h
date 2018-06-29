@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  MainViewController.h
 //  masonry
 //
 //  Created by Pro on 2018/6/29.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface MainViewController : UIViewController
 
 @end
-
